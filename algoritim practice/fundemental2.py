@@ -35,9 +35,17 @@ print(leap_year(year))
 			#    10
 			#     3
 
+def greater_than_third(num_list):
+    if len(num_list)< 3:
+        return None
+    count =0
+    for num in num_list:
+        if num > num_list[2]:
+            print(num)
+            count += 1
+    return count
 
-
-
+print(greater_than_third([6,4,5,2,3,7,10,2]))
 
 
 
@@ -57,3 +65,8 @@ print(leap_year(year))
 # Extra Challenge: How would you convert from Fahrenheit to Celsius then? 
 # What if the customer wants to choose from which system to convert to?
 
+def temperature_converter(temp):
+    return (9/5  * temp) + 32
+
+
+print(temperature_converter(30))

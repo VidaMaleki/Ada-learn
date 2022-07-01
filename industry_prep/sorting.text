@@ -1,0 +1,20 @@
+Explain the following:
+
+Sorting Algorithm - An algorithm which takes a list of unordered data and places it into order.
+
+Stable Sorting - A sorting algorithm is stable if it guarantees that the relative ordering of two values having the same sort key is the same after the sort as it was before the sort. 
+
+In-place Sorting - A sorting algorithm where the input list is mutated. Often also used to mean that the space complexity is `O(1)`
+
+What are the 2 stages of Merge Sort?  
+- Divide: Merge Sort divides the list into halves and sorts each half until encountering 1-element lists.  
+- Merge: Merge Sort merges each sorted list into larger sorted lists.
+
+What desirable characteristics does Merge Sort have?  
+- Merge Sort has O(n log n) time complexity.  It performs significantly faster than O(n^2) algorithms like Insertion sort for larger datasets in the worst case.
+- Merge sort is a stable sorting algorithm.
+
+What are some downsides of Merge Sort? 
+- Merge Sort has a space complexity of O(n).
+- Merge Sort has a best-case time complexity of O(n log n).
+

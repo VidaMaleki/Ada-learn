@@ -1,0 +1,69 @@
+Many built-in Python functions can take a ‘key’
+
+Allows us to pass a function as an argument to compare elements
+
+Examples:
+- min
+- max
+- sorted
+
+A different programming paradigm!
+
+Focuses on
+- No side effects (“pure functions”)
+- First-class functions
+
+We’ll talk about the Python functions
+- map
+- filter
+
+*** Map ****
+Takes a function and an iterable
+
+Runs that function against every element
+
+Returns a map object - can be converted back into list/set etc.
+
+Does not mutate the original!
+
+Works like a comprehension
+
+list(map(len, words))
+
+Is equivalent to
+
+[len(word) for word in words]
+
+**** Filter *******
+Takes a function and an iterable
+
+Runs that function against every element
+Includes each element that causes the function to return a truthy value
+Excludes ones that cause a falsy value
+
+Returns a filter object - can be converted back into list/set etc.
+
+Does not mutate the original!
+Works like a comprehension
+
+def less_than_three(item):
+	return item < 3
+list(filter(less_than_three, nums))
+
+Is equivalent to
+
+[num for num in nums if less_than_three(num)]
+
+**** lambda *****
+Works great with a lambda!
+
+# Doubles items in a list
+list(map(lambda n: 2 * n, nums))
+
+# Filters items less than 3
+list(filter(lambda n: n < 3, nums))
+
+Doubles items greater than 3 in a list 
+list(map(lambda n: 2 * n, 
+ filter(lambda n: n < 3, nums)))
+

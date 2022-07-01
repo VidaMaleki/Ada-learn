@@ -1,0 +1,35 @@
+ git branch
+lists local branches with a * for the current branch
+git switch <branch_name>
+switch to <branch_name>
+(also git checkout <branch_name>)
+git switch -c <branch_name>
+create <branch_name> and switch to it
+(also git checkout -b <branch_name>)
+git branch -d <branch_name>
+delete <branch_name>
+git merge <branch_name>
+merge <branch_name> into current branch locally
+git push origin <branch_name>
+push <branch_name> to remote
+git pull origin main
+pull remote main into current local branch (often to resolve a merge conflict)
+
+Using this repo https://github.com/Ada-C17/carnival-recipes Instructors will model:
+
+Making branches for features
+
+Making Pull Requests (PRs)
+
+Merging PRs
+
+Goals for this activity:
+ 
+The goal of this activity is to give you exposure to the process of resolving merge conflicts and using branches. Because merge conflicts and using branches are a natural part of any collaborative development effort, this is an important skill to have as a developer.
+
+https://github.com/Ada-C17/carnival-recipes
+
+If your team needs help use the classroom channels in Slack to ask for help and an instructor will jump in as they can.
+
+Read the ReadMe First!
+
