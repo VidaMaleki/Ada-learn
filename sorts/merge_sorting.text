@@ -1,0 +1,28 @@
+# Merge sort is a divide-and-conquer algorithm. It involves the following three stages:
+
+# Divide the array into two sub-arrays repeatedly until each sub-array is of size one.
+# Sort each sub-array. (An array of size one is sorted by default.)
+# Merge the sub-arrays into one array by combining two sub-arrays into one at each step.
+#Consider the two sub-arrays [1, 2, 7, 8] and [3, 5, 6, 9] in the final merge step in our example image above.
+
+
+Comparing which values (in bold)?
+Which is smaller and gets written to the auxiliary array?	
+Auxiliary array
+[1, 2, 7, 8]
+[3, 5, 6, 9]	1	[1]
+[1, 2, 7, 8]
+[3, 5, 6, 9]	2	[1, 2]
+[1, 2, 7, 8]
+[3, 5, 6, 9]	3	[1, 2, 3]
+[1, 2, 7, 8]
+[3, 5, 6, 9]	5	[1, 2, 3, 5]
+[1, 2, 7, 8]
+[3, 5, 6, 9]	6	[1, 2, 3, 5, 6]
+[1, 2, 7, 8]
+[3, 5, 6, 9]	7	[1, 2, 3, 5, 6, 7]
+[1, 2, 7, 8]
+[3, 5, 6, 9]	8	[1, 2, 3, 5, 6, 7, 8]
+
+Big O Complexity
+The time complexity of merge sort is O(n log n). Let's look closer to understand how we achieved this conclusion.
