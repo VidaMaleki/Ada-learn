@@ -44,7 +44,7 @@ balance(arr)
 # Example Input: [ 10, 10 ]
 # Example Output: -1
 
-arr1 = [ 5, 3, 1, 7 ]
+arr1 = [ 10, 10 ]
 
 def balance_index(arr1):
     sum_list = sum(arr1)

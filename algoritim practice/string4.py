@@ -36,31 +36,6 @@ print(palindrom(word))
 # Example Output: "mm"
 word = "racecars are great!"
 
-def word_chacker(word):
-    split_word = list(word)
-    j = -1
-    for i, num in enumerate(split_word):
-        if split_word[i] != split_word[j]:
-            split_word.remove(split_word[i])
-            split_word.remove(split_word[j])
-        j -= 1
-    return "".join(split_word)
-
-
-def chek_longest(word):
-    splited_s = word.split()
-    print(splited_s)
-    s = []
-    for w in splited_s:
-        b = word_chacker(w)
-        s.append(b)
-        print(b)
-    print(s)
-    return s
-
-
-print(chek_longest(word))
-
 
 def longestPalindrome(s):
     # Create a string to store our resultant palindrome

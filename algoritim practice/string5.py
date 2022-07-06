@@ -4,18 +4,18 @@
 # Example Output: "1, 3, 5-7, 9-10, 12"
 arr = [1,3,5,6,7,9,10,12]
 
-# def consecutive_numbers(arr):
-#     answer = []
-#     len_arr = max(arr) +1
-#     for i in range(1, len_arr):
-#         a = i-1
-#         if arr[i-1] == i-1  and arr[i] == i:
-#             answer.append(f'{a}-{arr[i]}')
-#         else:
-#             answer.append(f'{a}, ')
-#     return answer       
+def consecutive_numbers(arr):
+    answer = []
+    len_arr = max(arr) +1
+    for i in range(1, len_arr):
+        a = i-1
+        if arr[i-1] == i-1  and arr[i] == i:
+            answer.append(f'{a}-{arr[i]}')
+        else:
+            answer.append(f'{a}, ')
+    return answer       
 
-# consecutive_numbers(arr)
+consecutive_numbers(arr)
 
 # Given two arrays, return a dictionary using the first array as keys and the second array as the values. Don't forget your edge cases!
 
@@ -37,8 +37,8 @@ arr1 = [ "name", 222, "moon" ]
 arr2 = [ False, "abc", 123 ]
 def combine_dict(arr1, arr2):
     combine = {}
-    for i in range(lenarr1:
-        combine[i] = arr2[i]
+    for i in range(len(arr1)):
+        combine[arr1[i]] = arr2[i]
     print(combine)
     return combine
 

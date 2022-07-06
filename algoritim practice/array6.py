@@ -14,8 +14,7 @@ def flattening(arr):
     q = []  
     for i in arr:
         if isinstance(i,list):
-            for j in i:
-                q.append(j)
+            q= q+i
         else:
             q.append(i)
     return q
