@@ -1,0 +1,255 @@
+given a string return the first letter of each word. 
+Input: "Hello, World" output HW  - he just told me the question, it wasnt on replit or given. 
+"1. given a list of strings return the duplicates. inputs = [""hi"", ""hi"",""test"",""this""] output: [""hi""] 
+2. if we altered the problem, how would you then return the word with the highest count        "
+"Given a list of full names (first and last), return a list of just the first names. 
+If there are multiple people who share the same first name, return the first name with the initial of the last name
+input: ['Nina Lane','Nina Jeong', 'Ada Lovelace', 'Jared Stewart']
+output: [Nina L, Nina J, Ada, Jared]"
+"given a list of nums, print a list of the duplicates that appear in the list"
+"A variation of TwoSum:
+Given an array of integers (both positive and negative) and a target sum, find all unique pairs in the array that add to the sum. 
+EX input: [1, 3, 2, 2, 2, -1, 5, 0, 9, 4, 3, 2], 4
+EX output: {(1, 3), (2, 2), (-1, 5), (0, 4)}
+Output pairs in a set of tuples."
+"### Whole Foods has an app that allows customers to order their groceries online. They would like to add a feature to the app that shows customers how many items they have in their shopping cart. 
+### Write a method called count_shopping_cart, which takes in a list of items and prints out how many times each item occurs in the list."
+TwoSum
+"Given two strings A and B, output if A is present in B. 
+For ex: if A is “cat"", and B is “carrot” - the output should be true
+if A is “cat” and B is “actor” - the output should be false"
+With two collections of numbers in descending order, write a function that will merge the two and still be sorted in descending order. Describle the time complexity of your function.
+Checking if a string is a Palindrome
+The gave a large ingredients list, and a dictionary with the keys being the recipes and the value being a list of ingredients. They wanted you to return a list of the recipes that included all the ingredients you already were given.
+given a string of words, print the first letter of each word. I asked clarifying questions and then wrote short tests to account for edge cases. Input: "the brown fox", output: "tbf"
+Given two lists of integers (A and B) and a number k, return true if a number in A plus a number in B equals K
+- Given two lists, return a list that contains their intersecting values.
+FizzBuzz
+You are given an array of integers. Find the starting index of the triplet that sums to the largest value. A triplet is defined as a sequence of three consecutive values within the array.
+"Amazon is having a site-wide sale; everything is 20% off. Can you write me a function that takes a sentence found on the Amazon retail website, discounts the price if there is a price present, and finally returns the modified sentence.
+Example: ""Amazon Echos are $50 today."" > ""Amazon Echos are $40 today.""
+"
+"SV: You receieve a list of business data from multiple sources with differing priorities. You need to create a result that holds an entry for each business and takes attributes from each of the inputs depending on priority.
+
+Input = [ {""name"": ""Starbucks"", ""phone_number"": ""12345""},
+    {""name"": ""Starbucks"", ""is_open"": ""true""},
+    {""name"": ""Dunkin"", ""is_open"": ""false""} ] 
+
+Returns: [{""name"": ""Starbucks"", ""phone_number"": ""12345"", ""is_open"": ""true""}, {""name"": ""Dunkin"", ""is_open"": ""false""} ]"
+"Write a function to tokenize a page of plain text into words (use space as a delimiter) and find out the frequency of occurrence of the words."
+"Given an integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).
+Input: nums = [1,2,1]
+# # Output: [1,2,1,1,2,1]"
+"Given two integer arrays of equal length target and arr. In one step, you can select any non-empty sub-array of arr and reverse it. You are allowed to make any number of steps. Return True if you can make arr equal to target, or False otherwise.
+Example 1:
+ 
+Input: target = [1,2,3,4], arr = [2,4,1,3]
+Output: true"
+"Given a string s which consists of lowercase or uppercase letters, return the length of the longest palindrome that can be built with those letters. Letters are case sensitive, for example, ""Aa"" is not considered a palindrome here.
+Example 1:
+ 
+Input: s = ""abccccdd"" ccdbdcc dccaccd
+Output: 7"
+Write a function to determine whether a word is a palindrome
+"1 - Write a function that takes in an unsorted array of integers and returns the min value and max value.
+2 - Additionally, return the median value. "
+Problem1: Return duplicates of an array.  Problem 2: Two Sum 
+Two Sum - started with the basic (no need to account for negative or duplicate); once finished, asked how you can change if the input array has duplicates 
+TwoSum - given an array of integers, write a program where the sum of any two integers equals a specified number N.
+No coding question but asked about API's and front end
+Transform a string from "geeks_for_geeks" to "GeeksForGeeks"
+Asked about SQL and instances.
+fibonacci. If you solve it recursively, you will be asked to solve it with hash tables. (may be beneficial to know the memoization and/or iterative solutions, too. different student had to attempt memoization)
+"String concatenation - but presented as though you are recieving packages (libraries). Your algorithm should return the number of packages in the string. The string is a bunch of letters that say things like ""doesntmatterjsutsomepackage.version1.2\nthensomeotherpackage.version2.1\n""   each package in the string is seperated by the \n newline escape. So you just need to return the number of ""\n"" to get the count of packages. The most challenging part about this question was that they talked about packages for a long time - so it was harder to identify that it was just a string concatenation problem. 
+string = ""package1\npackage2\n""
+count = 0
+
+for i in string:
+  if i == ""\n"":
+    count += 1
+print(count)"
+Given two linked lists, return the sum of the two numbers in the linked lists. For example: [4,5,6] --> 654 and [8,0,1] --> 108. It should return the sum of the two, or 762. 
+Return a sorted list (without using a 'sorted' function.)
+"Define a function that takes an array of numbers (e.g input[]):
+        e.g [1, 2, 3, 4]
+And the function returns an array of numbers that are products of each other number in the array:
+e.g [24, 12, 8, 6]
+
+iteration 1: 24 is product (all but 1)
+iteration 2: 12 is product (all but 2)
+iteration 3: 8 is product (all but 3)
+iteration 4: 6 is product (all but 4)"
+From an integer that represents a dollar amount. eg. 27 and an array of denominations [20, 10, 5, 1].   Write a function that will return a list of the number of bills you'd need to construct the integer.   input: 27 // output [20, 5, 1, 1]     input: 58 // output [20, 20, 10, 5, 1, 1, 1].
+"Given a string return the most common letter. No need to account for punctuation, capitialization of letters was an edge cast that was okay to work on later. 
+
+Write a function that will accept two strings as parameters and return True if they are anagrams and False if they are not.
+
+SV: Write an algorithm to determine whether two strings are anagrams or not."
+Write function that counts number of chars in a str
+You have a string of words or sentences and you have to find the most used word
+"Check if a given string can be rearranged into a palindrome. 
+
+(I finsished early, Aaron the manager then asked if I can come up with a way to do this only using one for loop. But he's friendly and said at the end he didn't expect me to know the answer, just wanted to use the extra time to discuss)"
+"Short technical questions
+1. write a methods to determine whether the string had characters in it
+2. write a method to take out the nil out of an array
+3. call an instance method —> create a class and write an instance method ( be able to have that method take a parameter)
+4. how to call it without making a new instance of the class.
+5. how to see all the methods available for a certain object "
+"Imagine you have a list of customers that has a list of jobs. Write a function to determine if any two two customers share the same job (and thus would benefit from caching)
+ (Returns true/false)"
+"1. Given an array of integers, return a palindrome of each integer   2. Write a function which takes a input of a string of sentence, reverse the words inside the sentence   # e.g. Input: Today is sunny Friday   # Output: Friday sunny is Today
+# assume there is one space between each word
+# Input: """"
+# Output: """"
+"
+Given an array of numbers, return the average of these numbers. Follow up: how would you scale this for an infinate array of numbers?
+Write a function that takes an array of sorted integers (eg. [1,2,3,5,7,9,10,11]) and outputs a string of the ranges (eg. "1-3,5,7,9-11")
+Amazon is having a site-wide sale; everything is 20% off. Can you write me a function that takes a sentence found on the Amazon retail website, discounts the price if there is a price present, and finally returns the modified sentence. Example: "Amazon Echos are $50 today." > "Amazon Echos are $40 today." Assumptions: 1. there are no typos in the input sentence 2. you can use existing built-in functions to convert from strings to floats and vice versa (256.0).to_s # => "256.0" '3.14'.to_f => 3.14
+"given a list of stock prices, what is the maximum product you can make from one buy-sell transaction
+
+e.g. [2, 5, 1, 4, 3, 6, 10, 8, 0], output: 9  https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+Part a) Write a method to determine if a word is a palindrome. Part b) write a method to find the longest palindrome in a sentence.
+Write a method that returns the sum of the function f(n) = 1*3 + 3*5 + 5*7 ... to the nth number, once I wrote the function as a loop he asked if I could refactor using recursion 
+"Given a string, find the length of the longest substring without repeating characters.
+Example 1:
+Input: “abcabcbb”
+Output: 3
+Explanation: The answer is “abc”, with the length of 3.
+
+Example 2:
+Input: “bbbbb”
+Output: 1
+Explanation: The answer is “b”, with the length of 1."
+"REPL had a class they already wrote to represent {App} class. {App} had a method .mem that returns an integer representing memory required for that app. Challenge: write a method that takes three parameters: 2 separate arrays of App objects and an integer representing total available memory. That method should return an ""optimal pairing"" consisting of one App from each array such that their memory requirements add up to the total available memory. 
+
+Sample input: 
+
+frontend = [ App.new(3), App.new(5), App.new(7) ]
+backend = [ App.new(2), App.new(4), App.new(6) ]
+memory_available = 7 
+
+Expected output: l, m.,.
+
+optimal_pairing(frontend, backend, memory_available) should return  [ frontend[1] , backend[0] ] because they represent a total memory usage of 5 + 2 to make 7 "
+Write a method that finds a pair of ints in an array that add up to a constant int. - afte this , what if there are multiple pairs? then we talked about negative numbers, then what if the givven array was sorted? and we talked abut the space and time complexity of all of these. 
+"Check if a date is a palindrome.
+The date has a strict format: ’12-02-2021’, any other symbol except for a hyphen is not allowed. Hyphens should be omitted when checking for a palindrome. ’12-02-2021’ returns ‘true’, ’12-02-2022’ returns false. How will you modify the code if the date can come in three different formats? (12-02-2021; 02-12-2021; Dec-02-2021)"
+"FIND THE TOWN JUDGE
+
+In a town, there are n people labelled from 1 to n.  There is a rumor that one of these people is secretly the town judge.
+
+If the town judge exists, then:
+1. The town judge trusts nobody.
+2. Everybody (except for the town judge) trusts the town judge.
+3. There is exactly 1 person that satisfies properties 1 and 2.
+
+You are given a 2D array called trusts, where each element therein is an array of pairs (trusts[i] = [A, B]) representing that the person labelled A trusts the person labelled B.
+
+  example: 
+    trusts = [[1,3],[2,3],[1,2],[3,1]]
+    person1 trusts person3
+    person2 trusts person3
+
+If the town judge exists and can be identified, return the label of the town judge.  Otherwise, return -1."
+Given a log, can you please indentify the most visited page.                                                                                                                                           Input: file log format: comma separated values for customer ID and page ID. Sample input [[cust1, page1], [cust2, page1], [cust2, page2]]
+Write a function to determine if any of the items have promos in common.
+"Roman numerals are represented by seven different 
+symbols: I, V, X, L, C, D and M.
+
+Symbol Value
+I  => 1, V => 5, X => 10, L => 50, C => 100, M => 1000
+
+Input: ""III""
+Output: 3
+
+Input: ""IV""
+Output: 4
+
+Input: ""IX""
+Output: 9
+
+Input: ""LVIII""
+Output: 58
+Explanation: L = 50, V= 5, III = 3.
+
+Other Rules:
+- Not a valid roman numeral if more than three of the same character in a row (i.e. CCCC is not valid)"
+https://leetcode.com/problems/container-with-most-water/
+Given an array, return true or false if there are duplicates. Example: [1,2,3,4,1] => true, [1,2,3] => false
+"Somewhat open-ended question that progressively gets more requirements as you go.  Written on the whiteboard you see line 1 being ""order"", line2 being ""[items]"", and line3 being ""[promos]"".  This is to represent a shopping cart order, having an array of different items, and EACH item having an array of promos assoc'd with it.  
+
+Q1.  Write a function to determine if any of the items have promos in common.  Ex: there's a buy 1 get 1 free promo on socks, and I put 1 dress sock item and 1 athletic sock item in my order, the function should return TRUE on my shopping cart.  Ex: If I put 1 sock and 1 book in my cart, the function shoudl return False b/c they don't have any promos in common with each other.  
+Q1B: How would you check your solution in real life?
+Q2.  Now consider making your code more amenable to future modifications, such as being able to keep track of which items goes with what promos, how would you re-write your code?   
+Q3.  OPTIONAL, she only wanted to see how you think.  Now think about the promos, how would you design the code to allow you to check to see if you actually qualify for the promo?  Ex: suppose in Q1, the sock promo is now changed to buy 3 get 1 free, and I only have 2 sock items in my cart, so I'm technically not eligible to use the sock promo, how do you check for that?  "
+Compress/encode a string. If the encoded string is longer than the input, return the original input string, otherwise return the compressed string. 
+Given an array indicating a hand of cards, return whether or not it's a straight (five continguous numbers). First time through, I got to choose if A was 1 or 14. Then refactored so it could be either.
+Given an array of integers, return the greatest three.
+Given a secret hand and a guess hand return how many hits and pseudohits are in the guess hand. Example input : secret = [r,g,b,y], guess = [a,g,y,z],  Example output: 1 hit,1 pseudohit. A hit means the guess was the right letter in the right spot. A pseudohit means the letter is correct but in the wrong spot.
+Given an unsorted array, return the largest element.
+Given a text file with URL, method, IP, date. (Asked questions, and by the end, he told me to assume it's some sort of matrix, embedded array data structure, and I have the method to open and read the file.) 1. Find the num times a URL, ie 'A' was visited. 2. Find num of get requests to site A. 3. Find the num uniq visitors to site A. 4. Find the num unique visitors to site A in this date range (Make this more modular-- just added it to the method signature as params)  (He made them progresively harder, but ran out of questions after number 4) 
+Write a function that takes stock prices (array) and returns the best profit that could be made with one purchase and one sell. Also return the buy and sell days. Stock cannot be sold before purchase. In this case, indices were days associated with the stock prices. (different interviewee) When I came in, the question was explained to me verbally, and there was a line graph representing stock prices drawn on the board. Part of the question was figuring out that the values on the graph can correspond to array indices.
+Assuming an object-oriented language and a class already exists for a tic tac toe game, write a function that determines if a play is a winning play. (Print message if winner, do nothing if not.) Additional question: at what point in the program would you implement logic to check if there are no more possible moves, and what would that look like?  //  (Different question given to alternate interviewee) Given a list of interview schedules with 3 interviews, 15 candidates and a total of 45 interviews, every interviewer should be scheduled with a candidate only once. Return name of candidate and interviewer if duplicates exist. Return no duplicates if none found. Further considerations: what if all data is the same (so it is a duplicate entry)? (Questions given to another interviewee) 1. Given a book, write a function that take in a word from that book and return the number of time that word appears in the book  2. What are the different APIs that you have worked with in your past projects? What is the different between JSON and XML?
+Given an array of words return the number of duplicates. (”dog”, ”dog”, ”dog” counts as one duplicate, because it’s one word repeated.) How does a hash work, in your own words?
+1. Find the duplicate integers in an array, print them out. 2. You have 5 Marketing pages and several stats about the journey a user takes before they sign up. How would you create (design) a dashboard that displays this info?
+You will be passed a string like "aaaabbbc", write a function that will return "a4b3c1". In the case of "ab" where it would return "a1b1", return the shorter string.
+1. Design an ATM in a manner of your choosing (could be a class etc.). 2. Design a function that takes in an amount of money to be withdrawn, and gives the user back that in the appropriate number of 100's, 50's, 20's, 10's and 1's.
+Given an array, return the ranges in a string. [1, 2, 3, 5, 9, 10] --> "1-3, 5, 9-10". Given two arrays return the intersection (asked to optimize solution)
+Please show how a binary search works. Explain how merge sort works. What is your process from start to finish from getting a project through deploying it. If you wrote software that was supposed to be able to handle 1000 visits per sec, but it was only handling 200, what would you do and how would you solve the problem? What is an interface and when would you use it? How would you use an interface that's in a different package from the one you're working in? What is encapsulation? Are you familiar with fibonacci search? How do you ensure code quality and make sure things are working as expected? Given an integer, return true if it is a mirror of itself (e.g. 12321 -> T, 12345 -> F), otherwise return false. 
+Given an unsorted array, find the smallest missing number. Goal was to have something with O(n) time and O(1) space.n
+Given data of sports scores (home team/ away team, and scores) write a method to return which team won by the biggest margin.
+Create an app around Rock, Paper, & Scissors. Did not give any requriements and was open to anything. They wanted to see what questions we asked and our thought processes. In the end, they wanted to know how the method that determines the winner would look like. 
+Given an array of integers and an integer to find, return an array with the indexes of the first set of numbers that add to the integer to find.  For example: method([1,2,3,4,5], 6) should return [0, 4]. Clarifying questions: cannot assume the array is sorted, no negative values, a blank array should return a blank array, a sum that does not exist should return a blank array.
+Draw a html page for an individual shopping item-- Discuss how you would break it up into components; How would an Api send information to these components
+Return the first index of the repeated substring of length three Ex. "abcefgabc" should return 0; another example: "abcabc" should return 0; example: "abcdefdef" should return 3.
+"Given a string “CAT” return all the different iterations of the letters in the word [ “cat”, “cta”, “act”, “atc”, “tca”, “tca”]"
+Reverse a string. I was given a choice between reversing the string in place or returning a new string, and was asked to justify my decision.
+Given an array of integers and an integer (k), return an array of all sums in the array of k-consecutive integers. Example:   Given: [1, 4, 7, 3, 12, 1], 4   Return: [15, 26, 23] 
+Given an array of numbers and a target number, return true or false as to whether there are two numbers in the array that add up to the target.
+How would you create a 'like' button for a video. Back to front. Elaborated for each answer. If someone had multiple tabs open for the same video, how would you make sure it updated in without refreshing the page. How does the internet work?
+Users on the site have a "to-watch list" - compare two lists and see if they are the same
+Do you know how authentication services work? Explain. (First I was asked about a project I had worked on at Ada, and I talked about Betsy, including implementing OmniAuth)
+questions about past projects, db design, filtering/sorting, an algorithm I had solved
+Do you know what happens when a user interacts with your application? Explain. Given the radius of two circles and their center , determine if they touch or overlap.Asked to clean up the code afterwards. Asked about what have I learned by myself. I told him binary tree traversal and then he asked me to talk about it, and why are there so many different data structures. 
+Find the intersection of two sorted arrays
+On the whiteboard, show how you implemented your program flow (After I had talked about designing and implementing the order flow for Betsy). What other use cases can you think of for this particular feature/flow?
+How would you accommodate thousands or millions of customers for your application (such as Black Friday shopping)? 
+How long would you maintain a customer’s cart? How long would you expect/allow for a customer to complete an order?
+What is the relationship between the Order table and the Order Products table in your application?
+How would you query the database to find all the products from a particular order? How would you query the database to find all the orders that include a t-shirt product?
+Draw a representation of CSS box model
+Write a method that returns the multiplication table (from 1-12)
+URL encoding -- replace spaces in a URL with '%20'
+Given a string that is a url replace any spaces with %20. Example: “www.ADA codes.com" would become “www.ADA%20codes.com". At then end we discussed how I would extend my method to handle other substitutions that might need to be made to encode the url into a valid url.
+In an unordered array, return the max, the sum, the average, the mean and the median. 
+Given a url (string), replace any spaces with "%20".
+Given two string numbers calculate the sum “100” + “200” => 300
+Initialize a new game of  Minesweeper, given n number of cells and m number of mines.
+Determine if a given word is a palindrome. Follow up: Return a list of all the palindromes in a given word. <<word array??
+If you have a ransom note and a magazine, determine if the ransom note could have come from the magazine
+Given an array of numbers, write a method that will find triplets that sum up to zero.
+Given an array of integers and a number n, write a method that returns all the pairs of numbers from the array that add up to n. Describe how you would display this method on a webpage (had to ask for clarification before I understood what they wanted - they were looking for mention of a form that acceps parameters to use in the function which get saved in the controller and rendered in the view, etc).
+String compression - Given a string, take out any repeats and return the string. Examples: input1: "what", output1: "what". Input2: "wwhaaaattt", output2: "w2h1a4t3"
+Amazon records the load times for every visitor on the AWS page. This results in a very noisy graph, and what we would like is to have a better normalization of the data so we can pick out patterns or trends. Given an array of integers, write a function that takes in a window size (k) and returns an array of the sums. Example: original array [10, 12, 12, 15, 13, 18] with a window of 3 would return [34, 46]
+Write a function that returns all the duplicate values from two arrays. 
+Given a 9x9 matrix of numbers, write a function that determines whether it's a valid Sudoku solution (side note: don't forget about SETS!)
+Write a function that returns whether or not any pair of elements in an array add up to 10. Follow-up: instead of returning a boolean, return a count of how many pairs.
+Write a method that returns any integers in array that add up to the value 'n'.
+Write a method that returns if a string is a palindrome
+Wrtie a method for selection sort
+Talk to me about sorting and data structures.
+given a string of words, reverse the words ("hello world" => "world hello")
+given a string of numbers, return list of how many of each number there are
+given a string of a number (max 1000), return a string of that word in english (ex "one thousand two hundred and forty five"
+Write a method that takes in two numbers, the length and width and returns the area of a rectangle.
+Design an API that would return the number of servers associated with a given user account (given the option to whiteboard)
+Given an array of words, write a function that will return a camelcased word made up of those words Ex: [“woRd”, “bLaH”, “APPLE”] => “wordBlahApple”
+Given a string of space-separated numbers, write a function that will return a space-separated string of those numbers sorted in ascending order by the sum of their digits Ex: “100 51 32 72” (sums are “ 1 6 5 9 ”) => “100 32 51 72”
+Given two arrays of numbers, write a function that will return an array with the numbers that are common between the two arrays Ex: arr1 = [100, 200, 300] arr2 = [100, 300, 400] => [100, 300]
+Write a function that takes a number n as a parameter and outputs a "password" of length n, whose characters are drawn from the letters a-z, A-Z, and 0-9.
+Write a function that takes a number n as a parameter and outputs a "password" of length n, whose characters are drawn from the letters a-z, A-Z, and 0-9.
+Write a function that takes an array of integers (eg. [2, 5, 7, 4, 3, 9]) and returns the first pair of integers that adds up to 10 (eg. [7, 3]).
+Write a function that takes in an array of numbers and sorts them based on the sum of the individual integers in the number. (e.g. [ 2, 82, 35, 100] would return [100, 2, 35, 82] because 100 => 1, 2 => 2, 35 => 8, 82 => 10)
+Write a function that will take in a string as a parameter and change the string to type integer. (e.g. "123" -> 123).
+Given a class called Game attr :home_team_name, :home_team_score attr :away_team_name, :away_team_score attr :year Write a function that will return a hash with each team and their top winning score Example games: home away win_val A 30 B 20 10 *attr to A B 20 C 30 10 *attr to B Example return value: winning_games = { A : game_object, B : game_object ... }
