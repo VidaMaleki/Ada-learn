@@ -16,23 +16,38 @@ find_pairs("24 7 365 94") => {(7, 94), (24, 94), (94, 365), (7, 365), (24, 365),
 find_pairs("94") => set() # A single number cannot be paired, so an empty set should be returned
 """
 
+# def find_pairs(num_string):
+#   # Split string on the spaces
+#   nums = num_string.split() 
+#   # Convert each string into an integer
+#   nums = [int(num) for num in nums]
+
+#   new_nums = set()
+#   # Nested loop over the integers
+#   for num1 in nums:
+#     for num2 in nums:
+#         # Only add pairing if the first number is less than the second
+#         if num1 < num2:
+#           new_nums.add((num1, num2))
+
+#   return new_nums
+
+
 def find_pairs(num_string):
-  # Split string on the spaces
-  nums = num_string.split() 
-  # Convert each string into an integer
-  nums = [int(num) for num in nums]
-
-  new_nums = set()
-  # Nested loop over the integers
-  for num1 in nums:
-    for num2 in nums:
-        # Only add pairing if the first number is less than the second
-        if num1 < num2:
-          new_nums.add((num1, num2))
-
-  return new_nums
-
-
+    pairs_list = set()
+    splited_str = num_string.split()
+    for i in range(len(splited_str)):
+        for j in range(len(splited_str)-1,-1,-1):
+            if i == j:
+                  continue
+            elif int(splited_str[i]) < int(splited_str[j]) :
+                pairs_list.add((int(splited_str[i]),int(splited_str[j])))
+            elif int(splited_str[i]) > int(splited_str[j]):
+                pairs_list.add((int(splited_str[j]),int(splited_str[i])))
+    print(pairs_list)   
+    return pairs_list
+    
+    
 # Test cases
 assert find_pairs("7 3 99") == {(7, 99), (3, 7), (3, 99)}
 assert find_pairs("2 1") == {(1, 2)}

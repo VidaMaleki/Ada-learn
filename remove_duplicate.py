@@ -9,12 +9,12 @@ mylist = [1, 2, 2, 3, 5, 6, 6, 6, 8]
 mylist = list(dict.fromkeys(mylist))
 print(mylist)
 
-nums = [0,0,1,1,1,2,2,3,3,4]
+nums = [0,0,1,1,-1,2,2,3,3,4]
 
 def removeDuplicates(nums):
     
     
-    nums[:]=list(dict.fromkeys(nums))
-    return nums
+    return list(dict.fromkeys(nums))
+
 
 print(removeDuplicates(nums))

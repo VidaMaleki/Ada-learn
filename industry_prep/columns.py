@@ -28,19 +28,37 @@ matrix_4 = ((-2, -1, -3),)
 top_column(matrix_4) => 1
 """
 
+
+def max_column(matrix):
+    max_index = {}
+    for i in range(len(matrix)):
+        for j, num in enumerate(matrix[i]):
+            max_index[j] = 0
+            
+    for i in range(len(matrix)):
+        for j, num in enumerate(matrix[i]):
+            max_index[j] += num
+    print(max_index)  
+    return max(max_index, key=max_index.get)
+  
+matrix = ((5, 6, 7, 8),
+          (3, 9, 2, 5),
+          (2, 1, 9, 2))  
+print(max_column(matrix))
+
 def top_column(matrix):
-  best_sum = None
-  best_col = None
+    best_sum = None
+    best_col = None
 
-  for col in range(len(matrix[0])):
-    total = 0
-    for row in range(len(matrix)):
-      total += matrix[row][col]
-    if best_sum is None or total > best_sum:
-      best_sum = total
-      best_col = col
+    for col in range(len(matrix[0])):
+        total = 0
+        for row in range(len(matrix)):
+          total += matrix[row][col]
+        if best_sum is None or total > best_sum:
+          best_sum = total
+          best_col = col
 
-  return best_col
+    return best_col
 
 
 # Test cases

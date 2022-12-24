@@ -1,7 +1,11 @@
 '''
 Your goal is to write a function that finds gaps between given intervals.
 
-The intervals will be an UNSORTED tuple containing tuples. Each inner tuple will represent an integer interval. It will have two elements: the first element is the beginning of the interval, the second element is the end of the interval. The first element is guaranteed to be strictly less than the second element.
+The intervals will be an UNSORTED tuple containing tuples. 
+Each inner tuple will represent an integer interval. 
+It will have two elements: the first element is the beginning of the interval, 
+the second element is the end of the interval. 
+The first element is guaranteed to be strictly less than the second element.
 
 Here is an example of an input tuple:
 
@@ -13,9 +17,13 @@ intervals_1 = (
     (27, 30),
 )
 
-For clarity of the example, this tuple is sorted. However, note that some of the other test cases are NOT SORTED.
+For clarity of the example, this tuple is sorted. However, 
+note that some of the other test cases are NOT SORTED.
 
-In this example, we can see that the earliest interval ends at 10, and the next interval starts at 12. Thus, there is a gap from 10 to 12. Similarly, we can see there are two other gaps. Below is a tuple (in sorted order) showing all of the gaps for this example:
+In this example, we can see that the earliest interval ends at 10, 
+and the next interval starts at 12. Thus, there is a gap from 10 to 12. 
+Similarly, we can see there are two other gaps. 
+Below is a tuple (in sorted order) showing all of the gaps for this example:
 
 expected_output = (
     (10, 12), 

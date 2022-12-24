@@ -22,7 +22,7 @@ def pretty_assert(actual, expected):
 # Write a function that takes in a list of words and returns the shortest one. (assume no ties)
 
 def shortest_word(words):
-    pass
+    return min(words, key=len)
 
 pretty_assert(shortest_word(["from", "swerve", "of", "shore"]), "of")
 pretty_assert(shortest_word(["bay"]), "bay")
@@ -33,7 +33,7 @@ print("Wave 1 passed!")
 # Hint: remember to convert back to a list!
 
 def even_nums(nums):
-    pass
+    return list(filter(lambda a: a % 2 == 0 ,nums))
 
 pretty_assert(even_nums([1, 2, 8, 3, 4]), [2, 8, 4])
 pretty_assert(even_nums([2, 2, 8]), [2, 2, 8])
@@ -44,7 +44,7 @@ print("Wave 2 passed!")
 # Hint: remember to convert back to a list!
 
 def squares(nums):
-    pass
+    return list(map(lambda a: a*a, nums))
 
 pretty_assert(squares([1, 2, 8, 3, 4]), [1, 4, 64, 9, 16])
 pretty_assert(squares([2, 2, 8]), [4, 4, 64])
@@ -54,12 +54,13 @@ print("Wave 3 passed!")
 # Write a function that accepts a word, a function, and the name of that function. It should return a string that reports: "The result of applying FUNCTION_NAME to WORD is RESULT"
 
 def report(word, function, function_name):
-    pass
+    x = function(word)
+    return f'The result of applying {function_name} to {word} is {x}'
 
 pretty_assert(report("hello", len, "len"),
-              'The result of applying len to hello is 5')
+            'The result of applying len to hello is 5')
 pretty_assert(report("people", lambda w: w.upper(), "upper"), 
-              'The result of applying upper to people is PEOPLE')
+            'The result of applying upper to people is PEOPLE')
 print("Wave 4 passed!")
 
 # Wave 5
