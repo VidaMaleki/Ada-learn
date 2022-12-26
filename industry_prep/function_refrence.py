@@ -10,14 +10,35 @@ sentence = ["how", "are", "you", "today"]
 min_with_ties(sentence, len) -> ["how", "are", "you"]
 '''
 
-def min_with_ties(data, scorer):
-    pass
+def min_with_ties(sentence):
+    min_len = len(sentence[0])
+    
+    for i in range(1,len(sentence)):
+        if len(sentence[i]) < min_len:
+            min_len = len(sentence[i])
 
+    answer = []
+    min_int = int(answer[0])
+    for word in sentence:
+        answer.append(word)
+        if word.isalpha():
+            if len(word) == min_len:
+                answer.append(word)
+        else:
+            if int(word) == min_int:
+                answer.append(word)
+            elif int(word) < min_int:
+                answer.pop()
+                answer.append(word)
+                
+    return answer
+    
+print(min_with_ties(["1", "55", "4", "1"]))
 # Tests
-sentence = ["how", "are", "you", "today"]
-assert min_with_ties(sentence, len) == ["how", "are", "you"]
-numbers = ["1", "55", "4", "1"]
-assert min_with_ties(numbers, int) == ["1", "1"]
+# sentence = ["how", "are", "you", "today"]
+# assert min_with_ties(sentence) == ["how", "are", "you"]
+# numbers = ["1", "55", "4", "1"]
+# assert min_with_ties(numbers) == ["1", "1"]
 
 
 '''

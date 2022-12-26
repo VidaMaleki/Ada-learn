@@ -22,13 +22,13 @@ For this example of matrix_1 and n=2, the secret message is 'ur doing great'. Se
 
 def hidden(matrix, n):
     letters = []
-    i = 0
+    
     for row in matrix:
-        for letter in row:
-            if i % n == 0:
-                letters.append(letter)
-            i += 1
-    return ''.join(letters)
+        for i, letter in enumerate(row):
+            letters.append(letter)
+    x = [letter for i, letter in enumerate(letters) if i%n==0]
+    print(x)
+    return ''.join(x)
 
 matrix_1 = (
     ('u','e','r','e', ' ', 'e'),

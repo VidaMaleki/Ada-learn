@@ -68,25 +68,42 @@ print(a)
 # "Leetcode#73given a matrix of integers - mat[row][col]
 # write a function that will update every entry which shares a row or column with a ""0"" to ""0""
 # Example:
-# Input:
-# {{0, 1, 2},  
-# {3, 4, 5}}         
-# Output:
-# {{0, 0, 0},
-# {0, 3, 5}} 
+# Input:{{0, 1, 2}, {3, 4, 5}}         
+# Output:{{0, 0, 0}, {0, 3, 5}} 
 
 # *The prompts/ hints/ redirects were communicated in C## which was a little confusing*"
+matrix = [[1,1,1],[1,0,1],[1,1,1]]
+#        [[1,0,1],[0,0,0],[1,0,1]]
+# matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+#          [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
+def set_zeros(matrix):
+    b = []
+    for i in range(len(matrix)):
+        for j, num in enumerate(matrix[i]):
+            
+            if num == 0:
+                b.append(j)
+                matrix[i] = [0 for x in matrix[i]]
+                print(matrix)
+    for i in range(len(matrix)):
+        for j , num in enumerate(matrix[i]):
+            if j in b:
+                matrix[i][j] = 0
+        
+    return matrix
+
+
+print(set_zeros(matrix))
 
 
 
 
-
-
-
-# "Write a function which takes an input of a string that reverse the words of the sentence e.g. ""Today is 3rd Thursday of Month"" Output: ""Month of Thursday 3rd is Today""
+# "Write a function which takes an input of a string that reverse the words of the sentence e.g. 
+# ""Today is 3rd Thursday of Month"" Output: ""Month of Thursday 3rd is Today""
 # Follow-up question: Account for multiple spaces in string ""Cat   in the hat"" => ""hat the in   Cat"""
 
-
+def reverse_sentence_word(sentence):
+    pass
 
 
 
@@ -112,9 +129,25 @@ print(a)
 
 
 # 1. Reverse a string, "hello" so that it returns "olleh" 
+a = "hello"
+a = list(a)
+b = []
+for i in range(len(a)-1, -1, -1):
+    b.append(a[i])
+print("".join(b))
+
+
+
 # 2. Drew a picture of stick figures in a line. Assume they're all holding hands. 
 # (Wants you to ask about data type - she says to assume they're in an array). 
-# Write a method to remove the nth person from the line. 
+# Write a method to remove the nth person from the line.
+# 0  0  0  0  0 
+#/|\/|\/|\/|\/|\
+#/ \/ \/ \/ \/ \
+head = '  0 '
+body = '//||\\'
+def add_person(head, body, leg):
+    pass
 # 3. Now assume those people are in a linked list. 
 # How would you change your code to remove the nth person from the array? 
 # 4. Reverse words in a sentence ex: "good morning" => "morning good"
