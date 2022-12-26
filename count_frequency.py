@@ -5,7 +5,7 @@ def CountFrequency(my_list):
     for num in my_list:
         count[num] = count.get(num,0) +1
     return count
-
+print(CountFrequency(my_list))
 def unique_duplicates(my_list):
     frequency = CountFrequency(my_list)
     count_num = 0
@@ -16,3 +16,14 @@ def unique_duplicates(my_list):
 
 print(unique_duplicates(my_list))
 
+class Solution:
+    def firstUniqChar(self, s):
+        s_dict = {}
+        for l in s:
+            s_dict[l] = s_dict.get(l, 0) +1
+        
+        for i , l in enumerate(s):
+            if s_dict[l] == 1:
+                return i
+        return -1
+    
