@@ -18,19 +18,28 @@ credit: https://leetcode.com/problems/two-sum/
 # x =[ e for e,b in car.items() if b==a ]
 
 def two_sum(nums, target):
-    answer = []
-    required = {}
-    for i , num in enumerate(nums):
-        pair = target - num 
-        if pair in required:
-          answer.append([required[pair],i])
-        else:
-          required[num]=i
-    print(required)
-    return answer     
+    
+    new_dict = {num: i for i, num in enumerate(nums)}
+    for i, num in enumerate(nums):
+      pair = target - num
+      if pair in nums:
+        return [i, new_dict[pair]]  
 
-print(two_sum([2,7,11,15], 9))
 
-# assert two_sum([2,7,11,15], 9) == [0, 1]
-# assert two_sum([5,7,3,15], 22) == [1, 3]
-# assert two_sum([1, 2], 3) == [0, 1]
+
+assert two_sum([2,7,11,15], 9) == [0, 1]
+assert two_sum([5,7,3,15], 22) == [1, 3]
+assert two_sum([1, 2], 3) == [0, 1]
+print('Test was successful!')
+
+
+# answer = []
+    # required = {}
+    # for i , num in enumerate(nums):
+    #     pair = target - num 
+    #     if pair in required:
+    #       answer.append([required[pair],i])
+    #     else:
+    #       required[num]=i
+    # print(required)
+    # return answer   

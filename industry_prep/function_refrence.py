@@ -9,37 +9,56 @@ Example:
 sentence = ["how", "are", "you", "today"]
 min_with_ties(sentence, len) -> ["how", "are", "you"]
 '''
+# s = ["1", "55", "4", "1"]
+# print(min([int(i) for i in s]))
+
+
+
 
 def min_with_ties(sentence):
-    min_len = len(sentence[0])
     
-    for i in range(1,len(sentence)):
-        if len(sentence[i]) < min_len:
-            min_len = len(sentence[i])
+    
+    min_list = []
+    for i in sentence:
+        if i.isalpha() == True:
+            min_alpha = min(sentence)
+            if len(i) == len(min_alpha):
+                min_list.append(i)
+        else: 
+            min_digit = min([int(i) for i in sentence])
+            if i == min_digit:
+                min_list.append(i)   
+    return min_list
 
-    answer = []
-    min_int = int(answer[0])
-    for word in sentence:
-        answer.append(word)
-        if word.isalpha():
-            if len(word) == min_len:
-                answer.append(word)
-        else:
-            if int(word) == min_int:
-                answer.append(word)
-            elif int(word) < min_int:
-                answer.pop()
-                answer.append(word)
-                
-    return answer
-    
 print(min_with_ties(["1", "55", "4", "1"]))
 # Tests
-# sentence = ["how", "are", "you", "today"]
-# assert min_with_ties(sentence) == ["how", "are", "you"]
-# numbers = ["1", "55", "4", "1"]
-# assert min_with_ties(numbers) == ["1", "1"]
+sentence = ["how", "are", "you", "today"]
+assert min_with_ties(sentence) == ["how", "are", "you"]
+numbers = ["1", "55", "4", "1"]
+assert min_with_ties(numbers) == ["1", "1"]
 
+
+    # min_len = len(sentence[0])
+    
+    # for i in range(1,len(sentence)):
+    #     if len(sentence[i]) < min_len:
+    #         min_len = len(sentence[i])
+
+    # answer = []
+    # min_int = int(answer[0])
+    # for word in sentence:
+    #     answer.append(word)
+    #     if word.isalpha():
+    #         if len(word) == min_len:
+    #             answer.append(word)
+    #     else:
+    #         if int(word) == min_int:
+    #             answer.append(word)
+    #         elif int(word) < min_int:
+    #             answer.pop()
+    #             answer.append(word)
+                
+    # return answer
 
 '''
 WAVE 2: Using min_with_ties

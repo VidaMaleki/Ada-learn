@@ -1,22 +1,22 @@
-# def isValid(s):
+def isValid(s):
     
-#   stack = []
-#   for ch in s:
-#     if ch in ["(", "{", "["]:
-#       stack.append(ch)
-#     else:
-#       if not stack:
-#         return False
-#       curr = stack.pop()
-#       if ch == "(":
-#         if curr != ")":
-#           return False
-#       if ch == "{":
-#         if curr != "}":
-#           return False
-#       if ch == "[":
-#         if curr != "]":
-#           return False
+  stack = []
+  for ch in s:
+    if ch in ["(", "{", "["]:
+      stack.append(ch)
+    else:
+      if not stack:
+        return False
+      curr = stack.pop()
+      if ch == "(":
+        if curr != ")":
+          return False
+      if ch == "{":
+        if curr != "}":
+          return False
+      if ch == "[":
+        if curr != "]":
+          return False
         
 
 #   if stack:

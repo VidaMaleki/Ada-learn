@@ -72,24 +72,57 @@
 
 # print(ddd(preImage, postImage))
 
-s = "loveleetcode"
+# s = "loveleetcode"
 
-def countFrequency(s):
-    s_dict = {}
-    splitted_s = list(s)
-    print(splitted_s)
-    for char in splitted_s:
-        s_dict[char] = s_dict.get(char, 0)+1
+# def countFrequency(s):
+#     s_dict = {}
+#     splitted_s = list(s)
+#     print(splitted_s)
+#     for char in splitted_s:
+#         s_dict[char] = s_dict.get(char, 0)+1
         
-    print(s_dict)
-    answer= ""
-    for k, v in s_dict.items():
-        if v == 1:
-            answer=k
-            break
+#     print(s_dict)
+#     answer= ""
+#     for k, v in s_dict.items():
+#         if v == 1:
+#             answer=k
+#             break
     
-    for i, char in enumerate(splitted_s):
-        if char == answer:
-            return i
+#     for i, char in enumerate(splitted_s):
+#         if char == answer:
+#             return i
         
-print(countFrequency(s))
+# print(countFrequency(s))
+
+# s="  i am  -45"
+
+# def myAtoi(s):
+#         specials = ['-','.', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' ]
+#         answer=""
+#         for i in s:
+#             if i in specials:
+#                 answer += i
+#             else:
+#                 continue
+#         print(answer)
+#         if '-' in answer:
+#             return -int(answer)
+#         return int(answer)
+    
+# print(myAtoi(s))
+
+# print(int(s))
+
+# def strStr(haystack, needle):
+#     haystack_copy = haystack.replace(needle, '1')
+#     print(haystack_copy)
+#     if needle in haystack:
+#         for i in range(len(haystack_copy)):
+#             if haystack_copy[i] == '1':
+#                 return i
+#     else:
+#         return -1
+        
+# print(strStr("mississippi","issip"))
+strStr = ["flower","flow","flight", "flod"]
+print(list(zip(*strStr)))
